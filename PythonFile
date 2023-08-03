@@ -1,0 +1,29 @@
+class dog:
+  def __init__(self,inputname, inputbread, inputage):
+    self.name = inputname
+    self.bread = inputbread
+    self.inputage = inputage
+    
+  def myfunc(self):
+    print("Hello my name is " + self.name)
+   
+  def agecal(self):
+    if self.bread == 'German':
+        agereamin = 15 - self.inputage
+    if self.bread == 'French':
+        agereamin = 20 - self.inputage
+    if self.bread == 'Indian':
+        agereamin = 10 - self.inputage
+    print("printing while calling funciton")
+    return agereamin
+    
+    
+dog1 = dog("jimmy","German",8)
+
+dog2 = dog("Puppy","Freanch",9)
+
+dog3 = dog("Kukka","Indian",7)
+
+
+dog1.myfunc()
+print("Age remaing is ",dog1.agecal())
